@@ -1,0 +1,158 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #c8d1d0; 
+  background-image: url(alum.jpg);
+}
+#night {
+  background-color: #3b3e3f; 
+  background-image: url(alum-night.jpg);
+}
+#main {
+  width: 1231px;
+  margin: 0 auto;
+  position: relative;
+}
+#keyboard {
+  width: 1215px;
+  height: 540px;
+  padding: 75px 0 0 16px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: 0 -220px;
+  list-style-type: none;
+  z-index: 5;
+  position: relative;
+}
+#keyboard-real {
+  background-image: url('real.jpg');
+  position: absolute;
+  top: -215px;
+  left: -62px;
+  z-index: 1;
+  height: 830px;
+  width: 1350px;
+}
+#thabottom {
+  background-image: url('real.jpg');
+  background-position: 0 -341px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  height: 542px;
+  width: 1350px;
+}
+@font-face {
+  font-family: keyboard;
+  src: url('keyboard.otf') format('opentype');
+}
+ol li {
+  width: 47px;
+  height: 69px;
+  border-radius: 8px;
+  padding: 0 12px;
+  line-height: 69px;
+  float: left;
+  position: relative;
+  margin: 0 12px 12px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(255,0,0,.5);
+  opacity: .5;*/
+}
+#night li {
+  box-shadow: 0 2px 4px rgba(255,255,255,.7);
+  text-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+ol li span {
+  display: block;
+  height: 14px;
+  line-height: 42px;
+}
+ol .special {
+  height: 53px;
+  padding-top: 16px;
+  font-size: 16px;
+}
+ol .special span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 12px;
+  height: auto;
+  line-height: 36px;
+  font-size: 13px;
+}
+ol .tall {
+  height: 62px;
+}
+ol .tall span {
+}
+ol .special.tall {
+  height: 51px;
+  padding-top: 28px;
+}
+ol .special.tall span {
+}
+ol .less-padding {
+  padding: 0 8px;
+  width: 55px;
+}
+ol .less-padding span {
+  padding: 0 8px;
+}
+.r {
+  text-align: right;
+}
+.l {
+  text-align: left;
+}
+#delete {
+  width: 96px;
+}
+#tab {
+  width: 96px;
+}
+#caps-lock {
+  width: 114px;
+}
+#enter {
+  width: 112px;
+}
+.shift {
+  width: 154px;
+}
+.shift.r {
+  width: 155px;
+}
+.command {
+  width: 71px;
+}
+ol .command span {
+  font-size: 24px;
+  line-height: 44px;
+}
+#space {
+  width: 379px;
+}
+.arrow {
+  height: 38px;
+  line-height: 38px;
+  margin: 0 12px 3px 0;
+  font-size: 20px;
+}
+.up {
+  margin: 0 83px 3px;
+  border-radius: 8px 8px 0 0;
+}
+.down {
+  border-radius: 0 0 8px 8px;
+}
