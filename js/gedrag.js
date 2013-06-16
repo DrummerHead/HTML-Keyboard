@@ -1,13 +1,16 @@
-var $body = $('body');
+var $body = document.body;
+var $lightswitch = document.getElementById('lightswitch');
 var light = true;
 
-$('#lightswitch').on('click', function(){
+var switchLight = function(){
   if (light){
-    $body.addClass('night');
+    $body.className = 'night';
     light = false;
   }
   else {
-    $body.removeClass('night');
+    $body.removeAttribute('class');
     light = true;
   }
-})
+}
+
+$lightswitch.onclick = switchLight;
