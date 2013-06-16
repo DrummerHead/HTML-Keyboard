@@ -49,7 +49,8 @@ body {
   font-family: keyboard;
   src: url('../fonts/keyboard.otf') format('opentype');
 }
-li {
+li,
+.key {
   width: 47px;
   height: 69px;
   border-radius: 8px;
@@ -64,8 +65,10 @@ li {
   font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
   font-size: 24px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-#night li {
+#night li,
+#night .key {
   box-shadow:   0    1px 0   rgba(255, 255, 255, .6),
                 0    1px 4px rgba(255, 255, 255, .3);
   text-shadow:  2px  2px 3px rgba(255, 255, 255, .4),
@@ -153,4 +156,23 @@ ol li span {
 }
 .down {
   border-radius: 0 0 8px 8px;
+}
+
+#lightswitch {
+  position: absolute;
+  top: 9.9em;
+  right: -10em;
+  width: auto;
+  font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+}
+#lightswitch span {
+  display: inline;
+  font-size: 4em;
+  line-height: inherit;
+  vertical-align: middle;
+  color: #ccc;
+}
+#night #lightswitch span {
+  color: #0f0;
+  text-shadow: 0 0 3px #0f0;
 }
