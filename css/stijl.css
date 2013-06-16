@@ -5,7 +5,7 @@ html {
 }
 body {
   background-color: #c8d1d0; 
-  background-image: url(../img/alum.jpg);
+  background-image: url(../img/alum.png);
 }
 #night {
   background-color: #3b3e3f; 
@@ -49,7 +49,7 @@ body {
   font-family: keyboard;
   src: url('../fonts/keyboard.otf') format('opentype');
 }
-ol li {
+li {
   width: 47px;
   height: 69px;
   border-radius: 8px;
@@ -64,8 +64,6 @@ ol li {
   font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
   font-size: 24px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  /*background-color: rgba(255,0,0,.5);
-  opacity: .5;*/
 }
 #night li {
   box-shadow: 0 2px 4px rgba(255,255,255,.7);
@@ -76,12 +74,12 @@ ol li span {
   height: 14px;
   line-height: 42px;
 }
-ol .special {
+.special {
   height: 53px;
   padding-top: 16px;
   font-size: 16px;
 }
-ol .special span {
+.special span {
   position: absolute;
   top: 0;
   right: 0;
@@ -91,22 +89,18 @@ ol .special span {
   line-height: 36px;
   font-size: 13px;
 }
-ol .tall {
+.tall {
   height: 62px;
 }
-ol .tall span {
-}
-ol .special.tall {
+.special.tall {
   height: 51px;
   padding-top: 28px;
 }
-ol .special.tall span {
-}
-ol .less-padding {
+.less-padding {
   padding: 0 8px;
   width: 55px;
 }
-ol .less-padding span {
+.less-padding span {
   padding: 0 8px;
 }
 .r {
@@ -136,7 +130,7 @@ ol .less-padding span {
 .command {
   width: 71px;
 }
-ol .command span {
+.command span {
   font-size: 24px;
   line-height: 44px;
 }
