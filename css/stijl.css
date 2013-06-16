@@ -5,11 +5,11 @@ html {
 }
 body {
   background-color: #c8d1d0; 
-  background-image: url(alum.jpg);
+  background-image: url(../img/alum.jpg);
 }
 #night {
   background-color: #3b3e3f; 
-  background-image: url(alum-night.jpg);
+  background-image: url(../img/alum-night.jpg);
 }
 #main {
   width: 1231px;
@@ -28,7 +28,7 @@ body {
   position: relative;
 }
 #keyboard-real {
-  background-image: url('real.jpg');
+  background-image: url('../img/real.jpg');
   position: absolute;
   top: -215px;
   left: -62px;
@@ -37,7 +37,7 @@ body {
   width: 1350px;
 }
 #thabottom {
-  background-image: url('real.jpg');
+  background-image: url('../img/real.jpg');
   background-position: 0 -341px;
   position: absolute;
   bottom: 0;
@@ -47,7 +47,7 @@ body {
 }
 @font-face {
   font-family: keyboard;
-  src: url('keyboard.otf') format('opentype');
+  src: url('../fonts/keyboard.otf') format('opentype');
 }
 ol li {
   width: 47px;
