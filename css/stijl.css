@@ -7,7 +7,7 @@ body {
   background-color: #c8d1d0; 
   background-image: url(../img/alum.png);
 }
-#night {
+.night {
   background-color: #3b3e3f; 
   background-image: url(../img/alum-night.png);
 }
@@ -67,8 +67,8 @@ li,
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-#night li,
-#night .key {
+.night li,
+.night .key {
   box-shadow:   0    1px 0   rgba(255, 255, 255, .6),
                 0    1px 4px rgba(255, 255, 255, .3);
   text-shadow:  2px  2px 3px rgba(255, 255, 255, .4),
@@ -172,7 +172,7 @@ ol li span {
   vertical-align: middle;
   color: #ccc;
 }
-#night #lightswitch span {
+.night #lightswitch span {
   color: #0f0;
   text-shadow: 0 0 3px #0f0;
 }
