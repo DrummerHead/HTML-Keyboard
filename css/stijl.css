@@ -1,3 +1,5 @@
+/*  author: DrummerHead  */
+
 body,
 html {
   margin: 0;
@@ -6,6 +8,14 @@ html {
 body {
   background-color: #c8d1d0; 
   background-image: url(../img/alum.png);
+}
+::-moz-selection {
+  background: transparent;
+  text-shadow: none;
+}
+::selection {
+  background: transparent;
+  text-shadow: none;
 }
 .night {
   background-color: #3b3e3f; 
@@ -26,24 +36,6 @@ body {
   list-style-type: none;
   z-index: 5;
   position: relative;
-}
-#keyboard-real {
-  background-image: url('../img/real.jpg');
-  position: absolute;
-  top: -215px;
-  left: -62px;
-  z-index: 1;
-  height: 830px;
-  width: 1350px;
-}
-#thabottom {
-  background-image: url('../img/real.jpg');
-  background-position: 0 -341px;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  height: 542px;
-  width: 1350px;
 }
 @font-face {
   font-family: keyboard;
@@ -67,6 +59,11 @@ li,
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+li:active,
+.key:active {
+  top: 2px;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+}
 .night li,
 .night .key {
   box-shadow:   0    1px 0   rgba(255, 255, 255, .6),
@@ -75,6 +72,11 @@ li,
                -2px  2px 3px rgba(255, 255, 255, .4),
                 2px -2px 3px rgba(255, 255, 255, .4),
                -2px -2px 3px rgba(255, 255, 255, .4);
+}
+.night li:active,
+.night .key:active {
+  box-shadow:   0    0px 0   rgba(255, 255, 255, .6),
+                0    0px 4px rgba(255, 255, 255, .3);
 }
 ol li span {
   display: block;
@@ -165,12 +167,15 @@ ol li span {
   width: auto;
   font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
 }
+#lightswitch:active {
+  top: 10em;
+}
 #lightswitch span {
   display: inline;
   font-size: 4em;
   line-height: inherit;
   vertical-align: middle;
-  color: #ccc;
+  color: #444;
 }
 .night #lightswitch span {
   color: #0f0;
