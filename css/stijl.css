@@ -152,6 +152,24 @@ ol li span {
   margin: 0 12px 3px 0;
   font-size: 20px;
 }
+.function-key {
+  height: 38px;
+  line-height: 38px;
+  margin: 0 12px 12px 0;
+  font-size: 20px;
+  width: 51px;
+  font-size: 16px;
+}
+#power{
+  height: 38px;
+  width:46px;
+  line-height: 42px;
+}
+#esc{
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+}
 .up {
   margin: 0 83px 3px;
   border-radius: 8px 8px 0 0;
